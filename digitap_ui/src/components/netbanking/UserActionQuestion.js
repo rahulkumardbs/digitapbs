@@ -3,8 +3,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import { Card } from "react-bootstrap";
-import {centerContent, errorButton, primaryButton, primaryCard, primaryCardTitle} from '../AppStyle';
-import { UserAction } from "./utils/appUtil";
+import {centerContent, errorButton, primaryButton, primaryCard, primaryCardTitle} from '../../AppStyle';
+import { UserAction } from "../utils/appUtil";
 
 const QuestionComponent = () => {
     const [userQuestion, setUserQuestion] = useState('What as your child hood area pincode? (e.g.101010)');

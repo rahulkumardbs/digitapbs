@@ -3,8 +3,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import { Card } from "react-bootstrap";
-import {centerContent, primaryButton, errorButton, primaryCard, primaryCardTitle} from '../AppStyle';
-import { UserAction } from "./utils/appUtil";
+import {centerContent, primaryButton, errorButton, primaryCard, primaryCardTitle} from '../../AppStyle';
+import { UserAction } from "../utils/appUtil";
 
 const ErrorComponent = () => {
     const [userOtp, setUserOtp] = useState('');

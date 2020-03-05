@@ -1,17 +1,17 @@
 import React, { Component } from "react";
-import AppTopBar from "./components/AppTopBar";
-import FooterMenu from "./components/FooterMenu";
-import Home from "./components/Home";
-import OtpComponent from './components/UserActionOtp';
-import CaptchaComponent from './components/UserActionCaptcha';
-import ErrorComponent from './components/UserActionError';
-import SuccessComponent from './components/UserActionSuccess';
-import QuestionComponent from './components/UserActionQuestion';
-import ProcessComponent from './components/UserActionProcess';
+import AppTopBar from "./components/header/AppTopBar";
+import FooterMenu from "./components/footer/FooterMenu";
+import Home from "./components/netbanking/Home";
+import OtpComponent from './components/netbanking/UserActionOtp';
+import CaptchaComponent from './components/netbanking/UserActionCaptcha';
+import ErrorComponent from './components/netbanking/UserActionError';
+import SuccessComponent from './components/netbanking/UserActionSuccess';
+import QuestionComponent from './components/netbanking/UserActionQuestion';
+import ProcessComponent from './components/netbanking/UserActionProcess';
 import {contentStyles, appBody} from './AppStyle';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { CheckAuthentication} from './components/utils/appUtil';
-import PageNotFound from "./components/WrongUrl";
+import PageNotFound from "./components/netbanking/WrongUrl";
 
 
 class App extends Component {

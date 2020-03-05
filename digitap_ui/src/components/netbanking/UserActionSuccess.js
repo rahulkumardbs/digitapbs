@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import { Card } from "react-bootstrap";
 import { MdMailOutline } from "react-icons/md";
-import {centerContent, successButton, successCard, successCardTitle, successIcon} from '../AppStyle';
+import {centerContent, successButton, successCard, successCardTitle, successIcon} from '../../AppStyle';
 
 const SuccessComponent = () => {
     const successText="Your application has been created successfully and has been submitted for approval";

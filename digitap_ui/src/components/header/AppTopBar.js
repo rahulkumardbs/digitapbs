@@ -1,7 +1,7 @@
 import React from "react";
-import logo from '../static/images/logo1.svg';
+import logo from '../../static/images/logo1.svg';
 import {Navbar} from 'react-bootstrap';
-import {topBarStyle} from '../AppStyle';
+import {topBarStyle} from '../../AppStyle';
 
 const AppTopBar = () => {
   return (

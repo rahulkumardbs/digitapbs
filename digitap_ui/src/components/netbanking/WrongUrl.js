@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Card } from "react-bootstrap";
-import {centerContent, primaryCard, notFoundCard} from '../AppStyle';
+import {centerContent, primaryCard, notFoundCard} from '../../AppStyle';
 
 const PageNotFound = () => {
     return (

@@ -3,10 +3,10 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import { Card } from "react-bootstrap";
-import captcha from '../static/images/captcha.png';
-import {centerContent, errorButton, primaryButton, primaryCard, primaryCardTitle, captchaImageStyle} from '../AppStyle';
-import { UserAction } from "./utils/appUtil";
-import { captchaBaseUrl } from "../Config";
+import captcha from '../../static/images/captcha.png';
+import {centerContent, errorButton, primaryButton, primaryCard, primaryCardTitle, captchaImageStyle} from '../../AppStyle';
+import { UserAction } from "../utils/appUtil";
+import { captchaBaseUrl } from "../../Config";
 
 const CaptchaComponent = () => {
     var captchaUrl = sessionStorage.getItem("captcha_url");

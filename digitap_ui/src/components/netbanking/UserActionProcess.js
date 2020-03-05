@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import {centerContent, processCard} from '../AppStyle';
+import {centerContent, processCard} from '../../AppStyle';
 import Spinner from 'react-bootstrap/Spinner';
 import Form from 'react-bootstrap/Form';
-import {databaseRef} from './utils/firebase';
+import {databaseRef} from '../utils/firebase';
 
 const ProcessComponent = () => {
   //const [traxnData, setTraxnData] = useState([])
@@ -11,7 +11,6 @@ const ProcessComponent = () => {
     let traxnId = sessionStorage.getItem("traxnId");
     const otpRef = databaseRef.child(traxnId);
     //setTraxnData([]);
-    console.log(traxnData);
     otpRef.on("child_changed", function(snapshot) {
       traxnData=[];
       let datas = JSON.stringify(snapshot);

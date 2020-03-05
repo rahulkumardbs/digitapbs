@@ -4,10 +4,10 @@ import Button from 'react-bootstrap/Button';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import { MdAccountBalance, MdAccountCircle } from "react-icons/md";
 import { GiUnlocking } from "react-icons/gi";
-import {appHome, primaryButton, errorButton, homeInfo, homeIcon, homeContent, dispContent, hideContent} from '../AppStyle';
+import {appHome, primaryButton, errorButton, homeInfo, homeIcon, homeContent, dispContent, hideContent} from '../../AppStyle';
 import axios from 'axios';
-import {controllerUrl} from '../Config';
-import { VerifyCredential } from "./utils/appUtil";
+import {controllerUrl} from '../../Config';
+import { VerifyCredential } from "../utils/appUtil";
 //import { Col, Row } from "react-bootstrap";
 
 const sessionToken = sessionStorage.getItem('token');
@@ -36,7 +36,6 @@ const Home = () => {
             let url_string = window.location.href;
             let url = new URL(url_string);
             let params = url.searchParams.get("gl", "");
-            console.log("I am"+ params)
             if (params) {
                 params = params.split('_');
                 token = params[0];
